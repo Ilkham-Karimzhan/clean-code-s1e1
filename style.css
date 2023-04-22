@@ -29,7 +29,8 @@
    width: 500px;
    margin: 0 auto 0;
 }
-.todo__input, .todo__name {
+.todo__input, 
+.todo__name {
    width: 56%;
    display: inline-block;
    flex-grow: 1;
@@ -41,7 +42,8 @@
    margin: 0;
    padding: 0px;
 }
-.todo__item, .section__title {
+.todo__item, 
+.section__title {
    list-style: none;
 }
 .button {
@@ -108,7 +110,8 @@
    vertical-align: middle;
    align-items: center;
 }
-.todo__item .todo__radio {
+.todo__item 
+.todo__radio {
    margin: 0 10px;
 }
 .todo__item .label {
@@ -117,15 +120,18 @@
    font-size: 18px;
    width: 226px;
 }
-.todo__item .todo__input {
+.todo__item 
+.todo__input {
    width: 226px;
 }
-.todo__button-delete .todo__button-image {
+.todo__button-delete 
+.todo__button-image {
    height: 2em;
    transform: rotateZ(45deg);
    transition: transform 200ms ease-in;
 }
-.todo__button-delete .todo__button-image:hover {
+.todo__button-delete 
+.todo__button-image:hover {
    transform: rotateZ(0);
 }
 
@@ -136,13 +142,16 @@
 }
 
 /* Edit Task */
-.todo__item .todo__input {
+.todo__item 
+.todo__input {
    display: none;
 }
-.todo__item-editMode .todo__input {
+.todo__item-editMode 
+.todo__input {
    display: inline-block;
    width: 224px;
 }
-.todo__item-editMode .label {
+.todo__item-editMode 
+.label {
    display: none;
 }
