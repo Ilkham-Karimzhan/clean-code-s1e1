@@ -111,12 +111,12 @@
 .todo__item .todo__input {
    width: 226px
 }
-.todo__button-delete img {
+.todo__button-delete .todo__button-image {
    height: 2em;
    transform: rotateZ(45deg);
    transition: transform 200ms ease-in;
 }
-.todo__button-delete img:hover {
+.todo__button-delete .todo__button-image:hover {
    transform: rotateZ(0);
 }
 /* Completed */
