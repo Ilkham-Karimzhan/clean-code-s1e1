@@ -29,7 +29,7 @@
    width: 500px;
    margin: 0 auto 0;
 }
-.todo__input {
+.todo__input, .todo__name {
    width: 56%;
    display: inline-block;
    flex-grow: 1
@@ -86,6 +86,9 @@
 }
 
 /* New Task */
+.section-add-item{
+   margin: 16px 0;
+}
 .label-add-item {
    display: block;
    margin: 0 0 20px;
@@ -133,7 +136,7 @@
 }
 
 /* Edit Task */
-.todo__item-editMode .todo__input {
+.todo__item .todo__input {
    display: none
 }
 .todo__item-editMode .todo__input {
