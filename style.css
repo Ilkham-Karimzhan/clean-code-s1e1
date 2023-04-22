@@ -136,7 +136,7 @@
 }
 
 /* Completed */
-.section_completed .label {
+.section-completed .label {
    text-decoration: line-through;
    color: #888;
 }
