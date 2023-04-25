@@ -9,8 +9,10 @@
 
 var taskInput = document.getElementById("new-task"); //Add a new task.
 var addButton = document.getElementsByTagName("button")[0]; //first button
-var incompleteTaskHolder = document.querySelector(".section-todo"); //ul of #incompleteTasks
-var completedTasksHolder = document.querySelector(".section-completed"); //completed-tasks
+var incompleteTaskHolder = document.querySelector(".section__wrapper"); //ul of #incompleteTasks
+var completedTasksHolder = document.querySelector(
+  ".section__wrapper-completed"
+); //completed-tasks
 // ! changed getElementById to querySelector
 //New task list item
 var createNewTaskElement = function (taskString) {
@@ -79,9 +81,16 @@ var editTask = function () {
   var listItem = this.parentNode;
 
   var editInput = listItem.querySelector("input[type=text]");
+  console.log("🚀 ~ file: app.js:84 ~ editTask ~ editInput:", editInput);
   var label = listItem.querySelector(".label");
+  console.log("🚀 ~ file: app.js:86 ~ editTask ~ label:", label);
   var editBtn = listItem.querySelector(".todo__button-edit");
+  console.log("🚀 ~ file: app.js:88 ~ editTask ~ editBtn:", editBtn);
   var containsClass = listItem.classList.contains("todo__item-editMode");
+  console.log(
+    "🚀 ~ file: app.js:90 ~ editTask ~ containsClass:",
+    containsClass
+  );
   //If class of the parent is .editmode
   if (containsClass) {
     //switch to .editmode
@@ -142,8 +151,8 @@ var bindTaskEvents = function (taskListItem, checkBoxEventHandler) {
   console.log("bind list item events");
   //select ListItems children
   var checkBox = taskListItem.querySelector("input[type=checkbox]");
-  var editButton = taskListItem.querySelector(".button.todo__button-edit");
-  var deleteButton = taskListItem.querySelector(".button.todo__button-delete");
+  var editButton = taskListItem.querySelector(".todo__button-edit");
+  var deleteButton = taskListItem.querySelector(".todo__button-delete");
 
   //Bind editTask to edit button.
   editButton.onclick = editTask;
