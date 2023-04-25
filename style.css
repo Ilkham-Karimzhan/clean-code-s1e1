@@ -71,6 +71,11 @@
    margin: 0;
    text-transform: uppercase;
 }
+.section__title-add-item{
+   margin: 0 0 20px;
+
+
+}
 .todo__input {
    margin: 0;
    font-size: 18px;
